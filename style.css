@@ -1,0 +1,802 @@
+body{
+    margin:0;
+    padding:0;
+    background: #17192a;
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* remove color */
+    color:white;
+}
+
+/* -------------------Navigation--------------- */
+.navigation{
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #117aff;
+    position:sticky;
+}
+.menubutton{
+    cursor: pointer;
+    display: none;
+}
+ #mysidebar{
+    display: none;
+    width:100vw;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #117aff;
+}
+#mysidebar li{
+    font-size:20x;
+    margin-left:20px;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin:20px 0;
+    color: rgba(255,255,255,.5);
+}
+#mysidebar #item{
+    font-size:30px;
+    margin-left:20px;
+    color: rgba(255,255,255,.5);
+}
+
+.navigation li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding:15px 0;
+}
+.navigation #left-nav{
+    display: flex;
+    gap:40px;
+    margin-left:7px;
+}
+.navigation #right-nav{
+   display: flex;
+   justify-content: space-evenly; 
+   gap: 20px;
+   margin-right:7px;
+}
+.navigation #header-name{
+    font-size:27px;
+    color:white;
+    padding: 10px 0;
+}
+/* Navigation item represents the a tags in navigation */
+#left-nav #item{
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    font-size:22px; 
+}
+#right-nav #item{
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    font-size:27px; 
+}
+
+.navigation #right-nav li:hover{
+    transform: translateY(-4.5px);
+}
+.navigation #right-nav #item:hover{
+    color:#0a65ee;
+}
+ #mysidebar #item:hover{
+    color:#0a65ee;
+}
+.menubutton {
+   display: none;
+   background: none;
+   color:white;
+   float: right;
+}
+.navigation #right-nav  .menu:hover{
+    transform: none;
+}
+
+
+/* ------------About me Section--------- */
+.about-me{
+    display: flex;
+    width:50%;
+    margin:0 auto;
+    margin-top:40px;
+    gap:30px;
+}
+.profile-text #sampleText{
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+    background: linear-gradient(90deg,#26cc0c,#1e98c9);
+    -webkit-background-clip: text;
+}
+.profile-text #profile-name{
+    margin-top: 5px;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 57px;
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+    background: linear-gradient(90deg,#26cc0c,#1e98c9);
+    -webkit-background-clip: text;
+
+}
+.profile-text #profile-auto {
+    margin-top:6px;
+}
+.profile-text #profile-auto .auto-type{
+    color:#ff4f1a;
+    font-size:27px;
+    font-weight: 500;
+}
+.profile-text #profile-description{
+    margin-top: 15px;
+    line-height: 1.1;
+    color: #fff;
+    font-size: 16px;
+}
+#profile-link-button div{
+    display: inline-block;
+    padding:2px 10px;
+    border-radius: 4px;
+    border: 2px double transparent;
+    background-image: linear-gradient(#0d0e21,#0d0e21),radial-gradient(circle at left top,#17e24a,#0a65ee);
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+    margin-right:5px;
+    position: relative;
+}
+#profile-link-button div a{
+    color:white;
+    font-size:18px;
+}
+#profile-link-button [title-a]:hover::after{
+    content:attr(title-a);
+    color:white;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    margin-top:20px;
+    font-size:15px;
+}
+
+
+.profile-photo img{
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 4px double transparent;
+    background-image: linear-gradient(#0d0e21,#0d0e21),radial-gradient(circle at left top,#17e24a,#0a65ee);
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+}
+
+/* ---------------Skills Section---------- */
+
+.skills-head h2{   
+    text-align: center;
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+    background: -webkit-linear-gradient(#e21717,#ff4f1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#ff00ff);
+    font-size: 40px;
+    padding-top: 50px;
+    margin:30px 0 0 0;
+}
+.skills-head p{
+    margin-top: 0px;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*-----------Skills Set Secion------------------- */
+.skills{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.skills-set{
+    text-align: center;
+    width: 500px;
+   
+}
+    
+.skills-set p{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    color: #ff0055;
+    font-weight: 300;
+    font-size: 17px;
+    transition: 0.6s;
+    border:1px solid rgb(103, 102, 102);
+    border-radius: 5px;
+}
+.skills-set p i{
+    margin-right:5px;
+}
+/* ---------------Projects Head Section same as skills head section----------------  */
+.projects-head h2{   
+    text-align: center;
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+    background: -webkit-linear-gradient(#e21717,#ff4f1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#ff00ff);
+    font-size: 40px;
+    padding-top: 50px;
+    margin:30px 0 0 0;
+}
+.projects-head p{
+    margin-top: 0px;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* ---------------Projects Timeline Section------------- */
+.timelineborder{
+    width: 50%;
+    margin:0 auto;
+    margin-bottom: 6px;
+}
+.timelineborder .line{
+    position: relative;
+    left:20%;
+    width: 55%;
+    height: 1.5px;
+    background-color: #fff;
+}
+/* Actual Timeline Section */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap:100px;
+}
+.project-1{
+    position: relative;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.project-2{
+    position: relative;
+    font-size:24px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.icon-conatiner {
+    left: 0;
+    min-width: 200px;
+}
+.project-2 .icon-conatiner .icon{
+    border: 2px solid #ff0055;
+    position: relative;
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    left:0;
+    right:0;
+    margin-left:70px;
+    margin-top:80px;
+}
+
+.project-1 .icon-container .icon{
+    border: 2px solid #ff0055;
+    position: relative;
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    left:0;
+    right:0;
+    margin-top:80px;
+    margin-left:55px;
+}
+.project-2 .icon-container .icon{
+    border: 2px solid #ff0055;
+    position: relative;
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    left:0;
+    right:0;
+    margin-left:370px;
+}
+
+.date{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin-left:27px;
+    margin-top:30px;
+}
+.date span{
+    text-align: center;
+}
+.project-1 .icon-container .icon::after{
+    content:'';
+   width: 125px;
+   height: 125px;
+   margin: 0 auto;
+   border-radius: 50%;
+   position: absolute;
+   top:0;
+   left:0;
+   right:0;
+   margin-left:4px;
+   margin-top:0;
+   transition: all 0.33s ease-out 0s;
+   border: 2px solid #3b2dfa;
+}
+.project-2 .icon-container .icon::after{
+    content:'';
+   width: 125px;
+   height: 125px;
+   margin: 0 auto;
+   border-radius: 50%;
+   position: absolute;
+   top:0;
+   left:0;
+   right:0;
+   margin-left:4px;
+   margin-top:0;
+   transition: all 0.33s ease-out 0s;
+   border: 2px solid #3b2dfa;
+}
+.project-1 .timeline-line{
+    height:450px;
+    width:2px;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+  }
+.project-2 .timeline-line{
+    height:450px;
+    width:2px;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+.project-1 .timeline-line::before{
+    display: block;
+    content:'';
+    width:160px;
+    height:2px;
+    background-color: white;
+    position:absolute;
+    top:150px;
+    right:0;
+    bottom: 0;
+}
+.project-2 .timeline-line::after{
+    display: block;
+    content:'';
+    width:160px;
+    height:2px;
+    background-color: white;
+    position:absolute;
+    top:150px;
+    left:5px;
+    right:0;
+    bottom: 0;
+}
+.project-2 .timeline-line::before{
+    display: block;
+    content:'';
+    width:12px;
+    height:12px;
+    background-color: rgb(238, 29, 98);
+    border-radius: 50%;
+    left:0;
+    right:0;
+    position: absolute;
+    margin-left:-5px;
+    margin-top:145px;
+}
+.project-1 .timeline-line::after{
+    display: block;
+    content:'';
+    width:12px;
+    height:12px;
+    background-color: rgb(238, 29, 98);
+    border-radius: 50%;
+    left:0;
+    right:0;
+    position: absolute;
+    margin-left:-5px;
+    margin-top:145px;
+}
+
+.project-1 .timeline-content{
+    position: relative;
+    margin-top:30px;
+    width:300px;
+    margin-left:200px;
+    font-size:18px;
+}
+.project-2 .timeline-content{
+    width:300px;
+    font-size:18px;
+    position: absolute;
+    margin-right:390px;
+}
+.timeline-content .title{
+    font-size: 25px;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#ff1f62,#3b2dfa);
+    -webkit-background-clip: text;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+
+}
+.timeline-content .description {
+    margin-bottom: 0
+}
+.mine-btn {
+    color: #e6e3e3;
+    border: 2px double transparent;
+    background-image: linear-gradient(#0d0e21,#0d0e21),radial-gradient(circle at left top,#016eda,#d900c0);
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+    position: relative;
+    top:20px;
+    padding:5px 15px;
+    text-decoration: none;
+    margin-right:15px;
+}
+
+.project-1{
+    position: relative;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.project-2 .icon-container .icon{
+    
+    left:0;
+    right:0;
+    margin-right:-90px;
+    margin-top:80px;
+}
+
+.timeline-roles p{
+    display: inline-flex;
+    font-size: 13px;
+    color: #ee1d62;
+    background-color: #e6e3e3;
+    padding: 3px 10px;
+    border-radius: 14px;
+    margin: 2px 5px;
+    box-shadow: 5px 5px 115px -14px #000;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#12c2e9,#c471ed,#f64f59);
+}
+/* -------------------Navigation Queries------------------ */
+@media only screen and (max-width: 900px){
+    /* ==============Navigation Section======== */
+   
+    .menubutton{
+        display: block;
+        font-size:25px;
+        cursor: pointer;
+    }
+    #right-nav li #item{
+        display: none;
+    }
+
+    /*=============Profile Section======= */
+    .about-me{
+        width:100%;
+        gap:20px;
+
+    }
+    .profile-text{
+        max-width: 50%;
+        margin-left:20px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .timeline-content .title{
+        font-size:18px;
+        
+    }
+    .project-1 .timeline-line::before{
+        width:85px;
+        height:2px;
+      
+    }
+    .project-2 .timeline-line::after{
+        width:85px;
+        height:2px;
+        
+    }
+    .project-1 .timeline-content{
+        margin-left:30%;
+        font-size:15px;
+    }
+    .project-2 .timeline-content{
+        font-size:15px;
+        margin-right:50%;
+        margin-left: 5%;
+    }
+    
+    .project-1 .icon-container .icon{
+        border: 2px solid #ff0055;
+        width:100px;
+        height: 100px;
+        border-radius: 50%;
+        left:0;
+        right:0;
+        margin-top:80px;
+        margin-left:55px;
+    }
+    .project-2 .icon-container .icon{
+        position: relative;
+        width:100px;
+        height: 100px;
+        margin-left:200px;
+        border: 2px solid #ff0055;
+
+    }
+    .project-1 .icon-container .icon::after{
+       width: 100px;
+       height: 100px;
+       margin: 0 auto;
+       border-radius: 50%;
+       position: absolute;
+       top:0;
+       left:0;
+       right:0;
+       margin-left:4px;
+       margin-top:0;
+       transition: all 0.33s ease-out 0s;
+       border: 2px solid #3b2dfa;
+    }
+    .project-2 .icon-container .icon::after{
+
+       width: 100px;
+       height: 100px;
+       transition: all 0.33s ease-out 0s;
+       border: 2px solid #3b2dfa;
+    }
+    .project-1 .timeline-line::before{
+        display: block;
+        content:'';
+        width:150px;
+        height:2px;
+        background-color: white;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #header-name{
+        font-size:10px;
+    }
+    .menubutton{
+        font-size:20px;
+    }
+    .navigation #left-nav{
+        gap:17px;
+
+    }
+    .navigation #left-nav #item{
+        font-size:20px;
+    }
+     /*=============Profile Section======= */
+   
+    .profile-photo img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .project-1 .timeline-line::before{
+        display: block;
+        content:'';
+        width:100px;
+        height:2px;
+        background-color: white;
+
+    }
+    .project-1 .timeline-content{
+        margin-left:25%;
+        margin-right:5%;
+    }
+    .project-2 .timeline-content{
+        margin-left:5%;
+    }
+   
+    
+}
+@media only screen and (max-width: 500px){
+    .about-me{
+        display: flex;
+       width:100%;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column-reverse;
+       margin:0;
+    }
+
+    .navigation #header-name{
+        font-size:20px;
+      
+    }
+    .profile-text #sampleText{
+         font-size: 25px;
+    }
+    #left-nav #item{
+        font-size:12px; 
+    }
+    .profile-text #profile-name{
+        font-size: 30px;        
+    
+    }
+    .profile-text #profile-auto {
+        margin-top:6px;
+    }
+    .profile-photo img{
+        margin-top:20px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .timelineborder{
+        left:40px;
+        margin-bottom: 6px;
+    }
+    .timelineborder .line{
+        position: relative;
+        width: 60%;
+        height: 1.5px;
+        background-color: #fff;
+    }
+    .project-1 .timeline-content{
+        margin-left:1   5%;
+    }
+    .project-2 .timeline-content{
+        max-width:170px;
+        margin-left:5%;
+    }
+    .project-1 .icon-container .icon::after{
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        position: absolute;
+        margin-left:4px;
+        border: 2px solid #3b2dfa;
+     }
+     .project-1 .icon-container .icon{
+        border: 2px solid #ff0055;
+        width:90px;
+        height: 90px;
+        margin-left:45px;
+    }
+    .project-2 .icon-container .icon::after{
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        position: absolute;
+        margin-left:4px;
+        border: 2px solid #3b2dfa;
+     }
+     .project-2 .icon-container .icon{
+        border: 2px solid #ff0055;
+        width:90px;
+        height: 90px;
+        margin-left:100px;
+    }
+    .project-1 .timeline-line::before{
+        display: block;
+        content:'';
+        width:40px;
+        height:2px;
+        background-color: white;
+        position:absolute;
+        top:150px;
+        right:0;
+        bottom: 0;
+    }
+    .project-2 .timeline-line::after{
+        display: block;
+    content: '';
+    width: 45px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left:5px;
+    bottom: 0;
+
+    }
+    .date{
+        margin-left:20px;
+        margin-top:20px;
+    }
+    .mine-btn {
+        top:20px;
+        padding:5px 5px;
+        text-decoration: none;
+        margin-right:15px;
+    }
+    .project-1 .timeline-line::before {
+        width:100px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
+@media only screen and (max-width: 420px){
+   
+   .projects{
+    gap:50px;
+   }
+    #right-nav{
+        margin-right:0;
+    }
+    .menubutton{
+        font-size:15px;
+    }
+    .navigation{
+        width: 100%;
+        display: flex;
+        gap:10px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 2px solid #117aff;
+        position:sticky;
+    }
+    .skills-set p{
+        padding: 5px 10px;
+        color: #ff0055;
+        font-weight: 300;
+        font-size: 15px;
+        transition: 0.6s;
+        border:1px solid rgb(103, 102, 102);
+        border-radius: 5px;
+    }
+    .project-1 .timeline-line::before {
+        width: 60px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        bottom: 0;
+    }
+    .project-1 .timeline-content{
+        margin-left:15%;
+    }
+    
+    
+}
+
