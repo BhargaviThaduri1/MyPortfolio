@@ -263,14 +263,15 @@ body{
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    gap:100px;
 }
 .project-1{
     position: relative;
     font-size: 24px;
     width: 100%;
+    height:100%;
     display: flex;
     justify-content:center;
+    padding-bottom: 10%;
 }
 .project-2{
     position: relative;
@@ -278,6 +279,8 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
+    height:100%;
+    padding-bottom: 10%;
 }
 .icon-conatiner {
     left: 0;
@@ -359,22 +362,23 @@ body{
    border: 2px solid #3b2dfa;
 }
 .project-1 .timeline-line{
-    height:450px;
+    height:100%;
     width:2px;
     background-color: #fff;
     position: absolute;
     left:0;
     right:0;
     margin:0 auto;
+
   }
 .project-2 .timeline-line{
-    height:450px;
     width:2px;
     background-color: #fff;
     position: absolute;
     left:0;
     right:0;
     margin:0 auto;
+    height:100%;
 }
 .project-1 .timeline-line::before{
     display: block;
